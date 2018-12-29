@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.QuotePages">
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference sld_font}" Padding="20">
+            <Button x:Name="btn_quote" Text="Next" Pressed="Btn_quote_Pressed"/>
+            <Label x:Name="lbl_font" Text="{Binding Value, StringFormat='Font Size : {0}'}" />
+            <Slider x:Name="sld_font"  Maximum="50" Minimum="16"/>
+            <Label x:Name="lbl_quote" Text="Quote" FontSize="{Binding Value}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
