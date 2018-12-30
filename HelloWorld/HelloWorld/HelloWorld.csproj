@@ -14,12 +14,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="GridPageExercise1.xaml.cs">
+      <DependentUpon>GridPageExercise1.xaml</DependentUpon>
+    </Compile>
     <Compile Update="StackLayoutExercise1.xaml.cs">
       <DependentUpon>StackLayoutExercise1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="GridPageExercise1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="QuotePages.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
